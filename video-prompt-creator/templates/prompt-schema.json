@@ -1,0 +1,76 @@
+{
+    "meta": {
+        "topic": "{{topic}}",
+        "theme": "{{theme}}",
+        "style_preset": "{{style_name}}",
+        "duration_seconds": 15,
+        "aspect_ratio": "16:9",
+        "fps": 24,
+        "resolution": "4K"
+    },
+    "content": {
+        "environment": {
+            "description": "{{environment_description}}",
+            "time_of_day": "{{time_of_day}}",
+            "atmosphere": "{{atmosphere_details}}"
+        },
+        "character": {
+            "name": "{{character_name}}",
+            "description": "{{character_description}}",
+            "wardrobe": "{{clothing_style}}",
+            "emotion": "{{character_emotion}}"
+        },
+        "timeline": [
+            {
+                "time_range": "0-4s",
+                "shot_type": "{{shot_type_1}}",
+                "lens": "{{lens_1}}",
+                "action": "{{action_1}}",
+                "lighting": "{{lighting_1}}",
+                "sound_cue": "{{sound_cue_1}}"
+            },
+            {
+                "time_range": "4-8s",
+                "shot_type": "{{shot_type_2}}",
+                "lens": "{{lens_2}}",
+                "action": "{{action_2}}",
+                "vfx": "{{vfx_1}}"
+            },
+            {
+                "time_range": "8-11s",
+                "shot_type": "{{shot_type_3}}",
+                "lens": "{{lens_3}}",
+                "action": "{{action_3}}",
+                "focus": "{{focus_detail}}"
+            },
+            {
+                "time_range": "11-15s",
+                "shot_type": "{{shot_type_4}}",
+                "lens": "{{lens_4}}",
+                "action": "{{action_4}}",
+                "resolution": "{{resolution_action}}"
+            }
+        ]
+    },
+    "style_config": {
+        "camera_movement": "{{camera_movement_style}}",
+        "lighting_palette": "{{lighting_palette}}",
+        "color_grading": "{{color_grading_style}}",
+        "film_stock": "{{film_stock_emulation}}"
+    },
+    "audio_config": {
+        "ambient_music": "{{ambient_music_description}}",
+        "sound_effects": [
+            "{{sfx_1}}",
+            "{{sfx_2}}"
+        ],
+        "voice_over": {
+            "enabled": {
+                {vo_enabled
+                }
+            },
+            "speaker_profile": "{{vo_speaker_profile}}",
+            "script": "{{vo_script}}"
+        }
+    }
+}

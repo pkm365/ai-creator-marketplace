@@ -1,0 +1,13 @@
+{
+    "name": "ai-creator-marketplace",
+    "owner": {
+        "name": "Jarry Feng"
+    },
+    "plugins": [
+        {
+            "name": "video-prompt-creator",
+            "source": "./video-prompt-creator",
+            "description": "A plugin to create cinematic video prompts and storyboards for Sora 2"
+        }
+    ]
+}

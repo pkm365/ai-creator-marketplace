@@ -1,0 +1,29 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# OS
+.OSInstallerMessages
+.Trash-1000
+.Trashes
+
+# Project specific
+.gemini/
+reference/

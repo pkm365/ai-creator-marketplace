@@ -1,0 +1,9 @@
+{
+  "name": "video-prompt-creator",
+  "description": "A plugin to create cinematic video prompts and storyboards for Sora 2",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jarry Feng",
+    "url": ""
+  }
+}
