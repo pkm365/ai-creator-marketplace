@@ -44,6 +44,11 @@ Use this skill when:
 -   Load `templates/prompt-schema.json`.
 -   Populate all fields with the generated content.
 
+### Step 4: Save Artifact
+-   **Constraint**: If a file path is provided (e.g., `[project_dir]/prompts.json`), save the output to that file.
+-   If the file exists, append the new prompt object to the list (or create a list if it's a single object).
+-   Otherwise, return the JSON content directly.
+
 ## Output Structure
 
 Return a single JSON code block:

@@ -37,6 +37,10 @@ For each clip, define:
 ### Step 4: Format Output
 Load `templates/cinematic-sequence.md` (if available) or follow the structure below exactly.
 
+### Step 5: Save Artifact
+-   **Constraint**: If a file path is provided (e.g., `[project_dir]/storyboard.md`), save the output to that file.
+-   Otherwise, return the markdown content directly.
+
 ## Output Structure
 
 ```markdown

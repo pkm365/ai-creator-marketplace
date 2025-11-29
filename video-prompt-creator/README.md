@@ -16,16 +16,17 @@ A professional-grade plugin designed to assist in creating high-fidelity, cinema
 
 ## 🚀 Usage (The Director's Workflow)
 
-The workflow is modular. Please refer to the specific **Workflow Guide** for each skill:
+### 🎬 Main Entry Point: Orchestration
+The system is designed to be driven by the **Orchestrator Skill**.
+-   **Action**: Ask the agent: "Orchestrate a video production for [Topic]."
+-   **Skill**: `orchestrate-video-production`
+-   **What it does**: Automatically coordinates Research, Creative Direction, Storyboarding, and Prompt Generation.
 
--   **Ideation**: [Research Workflow](skills/research-story-topic/WORKFLOW.md) (Coming Soon)
--   **Polishing**: [Visual Fidelity Workflow](skills/optimize-visual-fidelity/WORKFLOW.md)
+### 🛠️ Specialist Skills (Manual Override)
+You can also invoke specific skills directly:
+
+-   **Ideation**: [Research Workflow](skills/research-story-topic/WORKFLOW.md)
+-   **Direction**: [Creative Director](agents/creative-director.md) (Agent)
 -   **Planning**: [Storyboard Workflow](skills/generate-storyboard/WORKFLOW.md)
 -   **Building**: [Prompt Creation Workflow](skills/create-video-prompt/WORKFLOW.md)
-
-### Quick Start
-1.  **Research**: Ask the agent for ideas.
-2.  **Polish**: Ask the agent to "Optimize visuals".
-3.  **Plan**: Ask the agent to "Generate storyboard".
-4.  **Build**: Ask the agent to "Create video prompt".
 
