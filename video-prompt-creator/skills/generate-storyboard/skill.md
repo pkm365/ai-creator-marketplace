@@ -16,10 +16,11 @@ Use this skill when:
 ## Workflow
 
 ### Step 1: Define Master Visual Lock (The Consistency Anchor)
-Before breaking down the story, define the immutable details:
--   **Character**: Exact wardrobe, age, ethnicity, key features (e.g., "scar on left cheek").
--   **Environment**: Lighting key, weather, primary colors.
--   **Style**: Reference to a specific Style Preset (e.g., `cyberpunk_noir`).
+1.  **Check Styles**: Briefly reference `../create-video-prompt/templates/styles/style-library.json` to see available visual presets.
+2.  **Define Immutable Details**:
+    -   **Character**: Exact wardrobe, age, ethnicity, key features.
+    -   **Environment**: Lighting key, weather, primary colors.
+    -   **Style**: Select a preset from the library (e.g., `cyberpunk_noir`) or define a custom one.
 
 This block will be repeated or referenced in every clip prompt.
 
@@ -33,6 +34,9 @@ For each clip, define:
 -   **Action**: What happens?
 -   **Physics/Transition**: How does this clip visually connect to the next?
 
+### Step 4: Format Output
+Load `templates/cinematic-sequence.md` (if available) or follow the structure below exactly.
+
 ## Output Structure
 
 ```markdown
@@ -41,7 +45,7 @@ For each clip, define:
 #### 🔐 Master Visual Lock (Consistency Data)
 > **Protagonist**: [Name], [Specific Details & Wardrobe]
 > **Environment**: [Location & Lighting State]
-> **Style**: [Reference to Style Preset]
+> **Style**: [Style Name from Library]
 
 ---
 
@@ -66,7 +70,7 @@ For each clip, define:
 #### 🔐 Master Visual Lock
 > **Protagonist**: Kael, tall, weathered leather armor, red scarf, glowing blue amulet on chest.
 > **Environment**: Bioluminescent cave, damp, teal ambient light.
-> **Style**: Epic Fantasy
+> **Style**: Epic Fantasy (from library)
 
 ---
 
