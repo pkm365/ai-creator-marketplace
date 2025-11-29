@@ -22,7 +22,7 @@ Use this skill when:
 
 ### Step 2: Assemble Middle Artifacts
 1.  **Technical Specs (The Look)**:
-    -   Load `../templates/styles/style-library.json`.
+    -   Load `templates/styles/style-library.json`.
     -   If a preset is selected, apply its `camera_system`, `lens_choice`, `film_stock`, `lighting_setup`, and `atmospherics`.
     -   If no preset matches, manually define these specs based on the user's description.
     -   Define **FPS** (usually 24fps for cinematic, 30/60 for digital).
@@ -41,7 +41,7 @@ Use this skill when:
     -   Ambient sound, specific SFX, and musical mood.
 
 ### Step 3: Fill Schema
--   Load `../templates/prompt-schema.json`.
+-   Load `templates/prompt-schema.json`.
 -   Populate all fields with the generated content.
 
 ## Output Structure

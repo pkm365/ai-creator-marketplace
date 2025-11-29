@@ -16,31 +16,16 @@ A professional-grade plugin designed to assist in creating high-fidelity, cinema
 
 ## 🚀 Usage (The Director's Workflow)
 
-### 1. Ideation & Research
--   **Goal**: Find a concept and visual style.
--   **Action**: Ask the agent: "Research some cool sci-fi concepts."
--   **Skill**: `research-story-topic`
+The workflow is modular. Please refer to the specific **Workflow Guide** for each skill:
 
-### 2. Polish (The Director's Touch)
--   **Goal**: Upgrade the visual quality before generation.
--   **Action**: Ask the agent: "Optimize the visuals for a cinematic look."
--   **Skill**: `optimize-visual-fidelity`
--   **📖 Guide**: [Optimize Visual Fidelity Usage](skills/optimize-visual-fidelity/USAGE.md)
+-   **Ideation**: [Research Workflow](skills/research-story-topic/WORKFLOW.md) (Coming Soon)
+-   **Polishing**: [Visual Fidelity Workflow](skills/optimize-visual-fidelity/WORKFLOW.md)
+-   **Planning**: [Storyboard Workflow](skills/generate-storyboard/WORKFLOW.md)
+-   **Building**: [Prompt Creation Workflow](skills/create-video-prompt/WORKFLOW.md)
 
-### 3. Plan Episode (Storyboard)
--   **Goal**: Structure the narrative into 15s clips with strict consistency.
--   **Action**: Ask the agent: "Generate a storyboard for this story."
--   **Skill**: `generate-storyboard`
--   **📖 Guide**: [Generate Storyboard Usage](skills/generate-storyboard/USAGE.md)
-
-### 4. Build (Generate Prompt)
--   **Goal**: Create the final executable JSON prompt for Sora 2.
--   **Action**: Ask the agent: "Create the video prompt."
--   **Skill**: `create-video-prompt`
--   **📖 Guide**: [Create Video Prompt Usage](skills/create-video-prompt/USAGE.md)
-
-## Production (Sora 2)
-1.  Copy the generated JSON or prompt text.
-2.  Paste into Sora 2.
-3.  Generate and stitch your clips!
+### Quick Start
+1.  **Research**: Ask the agent for ideas.
+2.  **Polish**: Ask the agent to "Optimize visuals".
+3.  **Plan**: Ask the agent to "Generate storyboard".
+4.  **Build**: Ask the agent to "Create video prompt".
 
