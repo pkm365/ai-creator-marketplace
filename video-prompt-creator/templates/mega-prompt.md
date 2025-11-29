@@ -1,50 +1,47 @@
-Cinematic 4K, 24fps, aspect ratio 16:9. 
-Ultra-detailed, professional film style, realistic motion, natural weight.
+# Sora 2 Mega Prompt (Cinematic V2)
+Role: Professional Cinematographer & VFX Supervisor
+Format: High-fidelity Descriptive Prompt
 
-Environment: {{environment_description}}  
-Time of Day: {{time_of_day}}  
-Atmosphere: {{atmosphere_details}}  
+## 1. Technical Specs (The Look)
+Camera System: {{camera_system}} (e.g., IMAX 70mm, Arri Alexa Mini)
+Lens: {{lens_choice}} (e.g., 35mm Anamorphic, 85mm Prime)
+Film Stock/Grade: {{film_stock}} (e.g., Kodak Vision3 5219, Bleach Bypass, Technicolor)
+Resolution/FPS: 4K, {{fps}}fps, Aspect Ratio 16:9
+Pacing Strategy: {{pacing_strategy}} (e.g., "Fast Cuts", "Slow Burn", "Balanced")
 
-Main Character: {{character_name}}, {{character_description}}  
-Wardrobe: {{clothing_style}}  
-Emotion / Energy: {{character_emotion_or_energy}}  
+## 2. The Scene (Environment & Atmosphere)
+Location: {{environment_detailed_description}}
+Lighting Setup: {{lighting_setup}} (e.g., "Three-point lighting with hard rim light", "Natural diffuse window light")
+Atmospherics: {{atmospherics}} (e.g., heavy volumetric fog, dust motes, heat shimmer, rain spray)
 
----
+## 3. The Subject (Character & Costume)
+Character: {{character_description}}
+Skin/Texture: {{skin_texture_details}} (e.g., visible pores, sweat beads, subsurface scattering, scars)
+Wardrobe: {{wardrobe_details}}
+Fabric Physics: {{fabric_physics}} (e.g., heavy wool coat weighing down, light silk fluttering in wind)
 
-Shot Timeline (15s):
+## 4. 15s Timeline & Camera Movement
+(Precise orchestration of camera and action based on Pacing Strategy)
 
-0–4s: 
-WS (Wide Shot) / Drone overhead, {{camera_lens_1}}mm. 
-{{environment_opening}}, establishing the world. 
-Lighting: {{lighting_style_1}}.  
-Sound: {{ambient_sound_1}}.  
+[{{time_range_1}}] Establishing / {{shot_type_1}}:
+Action: {{action_segment_1}}
+Camera Move: {{camera_move_1}} (e.g., "Slow Dolly In", "Orbit Right")
+Focus: Rack focus from {{focus_from}} to {{focus_to}}.
 
-4–8s: 
-MS (Medium Shot) / Steadicam, {{camera_lens_2}}mm.  
-{{character_action_1}}, breathing/movement emphasized.  
-Visual FX: {{fx_detail_1}}.  
+[{{time_range_2}}] Development / {{shot_type_2}}:
+Action: {{action_segment_2}}
+Physics Interaction: {{physics_detail}} (e.g., water splashing, glass shattering, hair blowing)
+VFX: {{vfx_notes}}
 
-8–11s: 
-CU (Close-Up) / Handheld, {{camera_lens_3}}mm.  
-Focus on {{detail_focus}}, emotional climax.  
-Optional Slow motion: {{slow_motion_rate}}.  
-Sound: {{sound_detail_2}}.  
+[{{time_range_3}}] Climax / {{shot_type_3}}:
+Action: {{action_segment_3}}
+Camera Move: {{camera_move_3}}
+Resolution: {{ending_state}}
 
-11–13s: 
-WS / Crane-up, {{camera_lens_4}}mm.  
-{{character_action_2}}, nature/environment responds ({{environment_reaction}}).  
-Visual: {{fx_detail_2}}, particles, motion blur.  
+## 5. Audio Landscape (Sound Design)
+Ambient: {{ambient_sound}}
+Specific SFX: {{specific_sfx}}
+Mood: {{music_mood}}
 
-13–15s: 
-WS → Crane back, {{camera_lens_5}}mm.  
-{{resolution_action}} — fade out or cut to next.  
-Color grading: {{color_style}}.  
-Sound: {{bgm_or_silence}}.  
-
----
-
-Technical Specs:
-• Depth of Field: Action scenes = f/{{fstop_action}}, Emotion = f/{{fstop_emotion}}  
-• Color: {{color_grading_style}}  
-• VFX: {{vfx_elements}}  
-• Safety: No cruelty, no gore, no destruction glorification.
+## Negative Prompt (Constraints):
+No morphing, no disappearing limbs, no text overlays, no cartoonish physics, maintain character consistency.

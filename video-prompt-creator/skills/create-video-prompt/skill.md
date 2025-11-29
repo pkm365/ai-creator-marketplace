@@ -18,23 +18,31 @@ Use this skill when:
 
 ### Step 1: Analyze Request
 -   Identify the core **Topic**, **Style**, and key **Elements**.
--   Determine if a specific **Style Preset** (e.g., Cyberpunk, Ghibli) applies.
+-   Determine if a specific **Style Preset** (e.g., `cyberpunk_noir`, `wes_anderson_symmetrical`) applies.
 
 ### Step 2: Assemble Middle Artifacts
-1.  **Style Config**:
-    -   If a preset exists (e.g., `../templates/styles/cyberpunk.json`), load it.
-    -   Otherwise, generate a custom style config (camera, lighting, color).
+1.  **Technical Specs (The Look)**:
+    -   Load `../templates/styles/style-library.json`.
+    -   If a preset is selected, apply its `camera_system`, `lens_choice`, `film_stock`, `lighting_setup`, and `atmospherics`.
+    -   If no preset matches, manually define these specs based on the user's description.
+    -   Define **FPS** (usually 24fps for cinematic, 30/60 for digital).
 2.  **Content Generation**:
-    -   Define `environment`, `character`, and the 15s `timeline`.
-    -   Ensure the timeline has 3-4 distinct shots covering the 15s duration.
+    -   **Environment**: Lighting setup, atmospherics (fog, dust).
+    -   **Character**: Skin texture details, wardrobe, and **Fabric Physics**.
+    -   **Pacing Strategy**: Determine the rhythm based on the topic.
+        -   *Fast Cuts* (Action/Thriller): `0-3s`, `3-12s`, `12-15s`.
+        -   *Slow Burn* (Drama/Atmosphere): `0-8s`, `8-13s`, `13-15s`.
+        -   *Balanced* (Standard): `0-5s`, `5-10s`, `10-15s`.
+    -   **Timeline**: Create exactly 3 segments using the calculated time ranges.
+        -   *Segment 1 (Hook)*: Establishing shot + Camera Move.
+        -   *Segment 2 (Development)*: Action + **Physics Interaction** + VFX.
+        -   *Segment 3 (Climax)*: Resolution + Final Camera Move.
 3.  **Audio Config**:
-    -   Select ambient music and SFX.
-    -   If the user requested a voice-over, write a short script (max 20 words for 15s).
+    -   Ambient sound, specific SFX, and musical mood.
 
 ### Step 3: Fill Schema
 -   Load `../templates/prompt-schema.json`.
 -   Populate all fields with the generated content.
--   Ensure `meta` fields (fps, resolution) are set correctly.
 
 ## Output Structure
 
@@ -42,10 +50,12 @@ Return a single JSON code block:
 
 ```json
 {
-  "meta": { ... },
-  "content": { ... },
-  "style_config": { ... },
-  "audio_config": { ... }
+  "meta": { "camera_system": "...", "lens_choice": "...", ... },
+  "content": {
+    "character": { "fabric_physics": "...", ... },
+    "timeline": [ ... ]
+  },
+  ...
 }
 ```
 
@@ -58,23 +68,30 @@ Return a single JSON code block:
 {
   "meta": {
     "topic": "Cyberpunk Detective",
-    "style_preset": "Cyberpunk Noir",
-    "duration_seconds": 15
+    "pacing_strategy": "Slow Burn",
+    "camera_system": "Arri Alexa 65",
+    "lens_choice": "Panavision C-Series Anamorphic",
+    "film_stock": "Digital with Kodak 2383 emulation",
+    ...
   },
   "content": {
-    "environment": {
-      "description": "Futuristic Tokyo street, wet pavement...",
+    "character": {
+      "description": "Detective in a trench coat...",
+      "skin_texture": "Wet skin, raindrops beading on stubble, subsurface scattering from neon lights",
+      "fabric_physics": "Heavy synthetic leather coat weighed down by water, stiff movement",
       ...
     },
-    ...
+    "timeline": [
+      {
+        "time_range": "00s - 08s",
+        "type": "Establishing",
+        "action": "Walking through a neon-lit alley...",
+        "camera_move": "Slow dolly back",
+        "focus": "Rack focus from rain on lens to detective's face"
+      },
+      ...
+    ]
   },
-  "style_config": {
-    "camera_movement": "Smooth tracking shots...",
-    ...
-  },
-  "audio_config": {
-    "ambient_music": "Synthwave, rain ambience...",
-    ...
-  }
+  ...
 }
 ```

@@ -1,0 +1,40 @@
+{
+    "styles": {
+        "cyberpunk_noir": {
+            "camera_system": "Arri Alexa LF",
+            "lens_choice": "Panavision C-Series Anamorphic (Blue Flares)",
+            "film_stock": "Digital crisp, high contrast, crushed blacks",
+            "lighting_setup": "Neon practicals (Cyan/Magenta), dark alleys, wet streets reflecting light",
+            "atmospherics": "Heavy rain, steam vents, volumetric pollution fog"
+        },
+        "studio_ghibli_realism": {
+            "camera_system": "35mm Film Camera",
+            "lens_choice": "50mm Prime, Soft Focus edges",
+            "film_stock": "Technicolor, vibrant greens and blues, painterly texture",
+            "lighting_setup": "Soft natural sunlight, dappled light through trees (Komorebi)",
+            "atmospherics": "Fluffy cumulus clouds, gentle breeze, floating petals"
+        },
+        "analog_horror": {
+            "camera_system": "VHS Camcorder (1990s)",
+            "lens_choice": "Built-in Zoom Lens, Auto-focus hunting",
+            "film_stock": "Magnetic Tape, static noise, chromatic aberration, tracking lines",
+            "lighting_setup": "Single flashlight source, harsh shadows, pitch black background",
+            "atmospherics": "Grainy low-light noise, claustrophobic"
+        },
+        "wes_anderson_symmetrical": {
+            "camera_system": "Arricam ST",
+            "lens_choice": "40mm Anamorphic (Wide field of view)",
+            "film_stock": "Kodak Vision3 50D (Saturated warm yellows and pastels)",
+            "lighting_setup": "Flat, high-key lighting, no shadows",
+            "atmospherics": "Clear, crisp, perfectly organized chaotic elements",
+            "camera_move": "Whip pans, perfectly static tripod shots, 90-degree turns"
+        },
+        "epic_fantasy": {
+            "camera_system": "IMAX 70mm",
+            "lens_choice": "Wide Angle 24mm",
+            "film_stock": "Clean, sharp, high dynamic range",
+            "lighting_setup": "Golden hour, rim lighting, god rays from clouds",
+            "atmospherics": "Dust particles, magical embers, wind sweeping through grass"
+        }
+    }
+}
