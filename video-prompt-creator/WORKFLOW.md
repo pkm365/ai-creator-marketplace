@@ -13,19 +13,6 @@ Start with a rough idea or ask for inspiration.
 *   **Example Input**: "I want a video of a cyberpunk detective walking in the rain."
 *   **Research**: If you're stuck, ask the agent: "Research some cool sci-fi concepts for a video series." The agent will use the `research-story-topic` skill to give you visual ideas.
 
-### 2. Invoke the Architect
-Call the **Video Prompt Architect** agent. This agent is trained to understand cinematic language and the specific requirements of the "Mega Prompt" structure.
-
-### 3. Generate a Single Clip (15s)
-If you need a single video clip (exactly 15s):
-1.  Ask the agent: "Create a video prompt for a cyberpunk detective."
-2.  The agent will use the `create-video-prompt` skill.
-3.  It will fill in the `mega-prompt.md` template with details for a 15-second timeline.
-4.  **Review**: Check the output.
-
-### 4. Plan an Episode (Series of Clips)
-If you want to tell a longer story (e.g., a 2-minute narrative):
-1.  Provide a script or a sequence description.
     *   **Example**: "The detective walks down the street, sees a clue, picks it up, and looks around suspiciously."
 2.  Ask the agent: "Generate an episode storyboard for this sequence."
 3.  The agent will use the `generate-storyboard` skill to break this down into **7-10 distinct clips**, each representing a 15-second segment.
